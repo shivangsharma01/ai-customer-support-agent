@@ -1,0 +1,74 @@
+[
+  {
+    "case_id": "CASE-001",
+    "scenario": "Customer requested a refund for a laptop delivered 33 days ago, outside the 30-day window.",
+    "decision": "denied",
+    "policy_triggered": "Rule 1: Refund Window"
+  },
+  {
+    "case_id": "CASE-002",
+    "scenario": "Customer requested a refund for wireless earbuds that had been opened and used for a week.",
+    "decision": "denied",
+    "policy_triggered": "Rule 2: Opened Electronics"
+  },
+  {
+    "case_id": "CASE-003",
+    "scenario": "Customer requested a third refund within the same 12-month period after two prior refunds.",
+    "decision": "denied",
+    "policy_triggered": "Rule 3: Refund Frequency Limit"
+  },
+  {
+    "case_id": "CASE-004",
+    "scenario": "VIP customer requested a refund 35 days after delivery; annual manual override was still available and was applied.",
+    "decision": "approved",
+    "policy_triggered": "Rule 4: VIP Manual Override"
+  },
+  {
+    "case_id": "CASE-005",
+    "scenario": "Customer requested a refund on an order totalling ₹72,000 for a home theatre system.",
+    "decision": "escalated",
+    "policy_triggered": "Rule 5: High-Value Manual Review"
+  },
+  {
+    "case_id": "CASE-006",
+    "scenario": "Customer requested a refund for a software license key that had already been delivered by email.",
+    "decision": "denied",
+    "policy_triggered": "Rule 6: Digital Products"
+  },
+  {
+    "case_id": "CASE-007",
+    "scenario": "Customer reported a ceramic dinner set arrived shattered; photos confirmed damage on arrival, refund issued within window.",
+    "decision": "approved",
+    "policy_triggered": "Rule 7: Damaged Items"
+  },
+  {
+    "case_id": "CASE-008",
+    "scenario": "Account with a high fraud risk score requested a refund claiming the parcel never arrived despite delivery confirmation.",
+    "decision": "escalated",
+    "policy_triggered": "Rule 8: Fraud Check"
+  },
+  {
+    "case_id": "CASE-009",
+    "scenario": "Customer returned an unopened smartphone in original sealed packaging 12 days after delivery.",
+    "decision": "approved",
+    "policy_triggered": "Rule 1: Refund Window"
+  },
+  {
+    "case_id": "CASE-010",
+    "scenario": "Customer requested a refund for a t-shirt that did not fit, 20 days after delivery, first refund of the year.",
+    "decision": "approved",
+    "policy_triggered": "Rule 1: Refund Window"
+  },
+  {
+    "case_id": "CASE-011",
+    "scenario": "VIP customer requested an out-of-window refund but had already used their annual override in March.",
+    "decision": "denied",
+    "policy_triggered": "Rule 4: VIP Manual Override"
+  },
+  {
+    "case_id": "CASE-012",
+    "scenario": "Customer requested a refund for a gift card that had been partially spent.",
+    "decision": "denied",
+    "policy_triggered": "Rule 6: Digital Products"
+  }
+]
