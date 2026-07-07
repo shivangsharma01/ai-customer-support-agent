@@ -5,6 +5,8 @@ reasons; **tools verify facts**; a deterministic policy engine has the final
 word. Reasoning traces stream to an admin dashboard, and customer PII never
 leaves the backend.
 
+## [Video Walkthrough](https://www.loom.com/share/84c7c5ac15ae4dd7bdc7b4c7b878146f)
+
 ## Architecture
 
 ```
