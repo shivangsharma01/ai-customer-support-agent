@@ -1,0 +1,27 @@
+# Infrastructure services for local development without Homebrew.
+# Backend and frontend run natively (see README). On this project's demo
+# machine these run via brew (postgresql@17 + ollama); this file is the
+# containerized equivalent.
+services:
+  db:
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_DB: refund_agent
+      POSTGRES_HOST_AUTH_METHOD: trust
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama:/root/.ollama
+    # After first start: docker compose exec ollama ollama pull qwen2.5:3b
+    #                    docker compose exec ollama ollama pull nomic-embed-text
+
+volumes:
+  pgdata:
+  ollama:
